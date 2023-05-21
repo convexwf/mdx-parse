@@ -1,0 +1,481 @@
+.return_index {
+    font-weight: 600px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: inline;
+    border-style: solid;
+    border-color: #929292;
+    border-width: 2px;
+}
+
+.return_index a:link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body {
+    font-family: Arial, "Meiryo", "HanaMinA", "HanaMinB";
+}
+
+@page {
+    margin: 0.5em;
+}
+
+tbody,
+thead,
+tfoot,
+tr,
+td,
+th {
+    border-style: inherit;
+    border-width: inherit;
+    border-color: inherit;
+}
+
+.leftFloat {
+    float: left;
+}
+
+.rightFloat {
+    float: right;
+}
+
+span.ref1 {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+span.ref2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 75%;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 0.2em;
+    margin-right: 0.5em;
+    border-radius: 0.2em;
+}
+
+span.JinE {}
+
+ruby.EmphInExample,
+span.EmphInExample {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+span.NinHeader {
+    padding-left: 4px;
+    color: #666666;
+}
+
+span.NumberOfExample {
+    color: #000000;
+}
+
+span.consecNum-j {
+    font-size: 0.4em;
+}
+
+span.arrowInLinkedHeader {
+    color: #666666;
+}
+
+p.j-honbun {
+    text-align: left;
+    margin-left: 2em;
+    text-indent: -2em;
+    line-height: 1.75em;
+}
+
+p.sq3em1minus {
+    text-align: left;
+    margin-left: 3em;
+    text-indent: -1em;
+    line-height: 1.75em;
+}
+
+p.sq2em {
+    text-align: left;
+    margin-left: 2em;
+    line-height: 1.75em;
+}
+
+p.ref1 {
+    padding-left: 2em;
+    line-height: 1.75em;
+}
+
+p.c-honbun-1para-c {
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: left;
+}
+
+p.c-honbun-c {
+    font-family: sans-serif;
+    line-height: 2;
+    text-indent: -24px;
+    margin: 0px 0px 0px 24px;
+}
+
+h5.header05 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.33em;
+    line-height: 2;
+    text-indent: 0px;
+    margin: 0px;
+}
+
+h4.header04 {
+    font-family: sans-serif;
+    font-size: 1.25em;
+    line-height: 2;
+}
+
+p.e-honbun-e {
+    font-family: sans-serif;
+    line-height: 2;
+    text-indent: -24px;
+    margin: 0px 0px 0px 24px;
+}
+
+p.e-honbun-1para-e {
+    font-family: sans-serif;
+    line-height: 2;
+    text-indent: 0px;
+    margin: 0px;
+}
+
+h1.header01 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.33;
+    color: #FFFFFF;
+    text-indent: 0px;
+    background-color: #999;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-left: 10px;
+    border: thick outset #999;
+}
+
+p.m01 {
+    font-family: sans-serif;
+    font-size: 0.6em;
+    line-height: 1.7;
+    text-indent: 0px;
+    margin: 0px;
+}
+
+p.m02 {
+    font-family: sans-serif;
+    font-size: 0.6em;
+    line-height: 2;
+    color: #808080;
+    text-indent: 0px;
+    margin: 0px;
+}
+
+h2.sample {
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.75;
+    text-indent: -16px;
+    margin: 0px 0px 0px 16px;
+}
+
+p.e-honbun {
+    line-height: 1.5;
+    text-align: left;
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+}
+
+p.ref1inE {
+    font-size: 0.75em;
+    padding-left: 1.5em;
+    line-height: 1.75em;
+}
+
+p.ref1inEminus1 {
+    font-size: 0.75em;
+    padding-left: 2.25em;
+    text-indent: -0.75em;
+    line-height: 1.75em;
+}
+
+p.m03 {
+    font-family: sans-serif;
+    font-size: 0.6em;
+    line-height: 2;
+    color: #808080;
+    text-indent: 0px;
+    margin: 0px;
+}
+
+p.m04 {
+    font-family: sans-serif;
+    font-size: 0.6em;
+    line-height: 2;
+    color: #808080;
+}
+
+p.c-honbun-1para {
+    text-align: left;
+    line-height: 1.25em;
+}
+
+p.k-honbun-1para {
+    text-align: left;
+    font-family: sans-serif;
+}
+
+p.j-honbun-1para {
+    font-size: 1em;
+    line-height: 1.75em;
+    text-align: left;
+}
+
+p.linkToTranslation {
+    font-family: sans-serif;
+    font-size: 0.6em;
+    line-height: 2;
+    text-align: center;
+    text-indent: -24px;
+    margin: 0px 0px 0px 24px;
+}
+
+p.e-honbun-1para {
+    text-align: left;
+    line-height: 1.25em;
+}
+
+p.c-honbun {
+    text-align: left;
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+}
+
+p.k-honbun {
+    text-align: left;
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+}
+
+p.linked-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+    margin: 0px 0px 0px 48px;
+}
+
+p.trns-separater {
+    border-top-width: thin;
+    border-top-style: dotted;
+    border-top-color: #999;
+    margin-top: 0.5em;
+}
+
+p.k-honbun-1para-k {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+p.k-honbun-k {
+    font-family: sans-serif;
+    font-size: 1em;
+    text-indent: -2em;
+    margin-left: 2em;
+}
+
+h6.header06 {
+    font-family: sans-serif;
+    font-size: 1.33em;
+}
+
+p.para-style-override-1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+div.headerBlock {}
+
+h1.headerL {
+    font-size: 18px;
+    background: #CCC;
+    border-radius: 0.25em;
+    padding-left: 0.25em;
+}
+
+span.parenInHeader {
+    font-size: 60%;
+}
+
+ruby.parenInHeader {
+    font-size: 40%;
+}
+
+p.meaning {
+    line-height: 40%;
+}
+
+div.exampleBlock {}
+
+dl.example {
+    line-height: 1.75em;
+    border-color: #000000;
+    border-width: thin;
+}
+
+dl.example dt {
+    clear: left;
+    width: 1.25em;
+    float: left;
+    font-weight: bold;
+    margin-top: 0.3em;
+}
+
+dl.example dd {
+    text-align: left;
+    margin-left: 1.25em;
+    padding-bottom: 0.5em;
+}
+
+div.connectionBlock {
+    margin-bottom: 4px;
+}
+
+span.strike {
+    text-decoration: line-through;
+}
+
+div.explanationBlock {}
+
+p.ref2inE {
+    font-size: 0.75em;
+    text-align: left;
+}
+
+div.anchored-image {}
+
+div.anchored-image-70 {
+    width: 70%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+ul.ImageCentering-70 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.ImageCentering-70 li {
+    display: inline-block;
+    width: 70%;
+}
+
+ul.ImageCentering-50 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.ImageCentering-50 li {
+    display: inline-block;
+    width: 50%;
+}
+
+ul.ImageCentering-30 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.ImageCentering-30 li {
+    display: inline-block;
+    width: 30%;
+}
+
+ul.ImageCentering-20 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.ImageCentering-20 li {
+    display: inline-block;
+    width: 20%;
+}
+
+span.underline {
+    text-decoration: underline;
+}
+
+span.strike {
+    text-decoration: line-through;
+}
+
+div.column {
+    padding: 1em;
+    border: thin solid #000000;
+}
+
+table.connect {
+    background-color: #CFCFCF;
+    width: 100%;
+}
+
+tr.connect {}
+
+th.connect {
+    background-color: #999999;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 3em;
+}
+
+td.connect {
+    padding-right: 0.5em;
+}
+
+td.connect2 {
+    width: 1.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #585858;
+    text-align: center;
+}
+
+dl {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.index_part {
+    display: inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 12px;
+}
+
+.index_part a:link {
+    text-decoration: none;
+    font-size: 20px;
+}

@@ -1,0 +1,66 @@
+body {
+    counter-reset: explanation_counter;
+    word-wrap: break-word;
+}
+
+.explanation::before {
+    counter-increment: explanation_counter;
+    content: counter(explanation_counter) '、';
+}
+
+.sentence {
+    padding-left: 24px;
+}
+
+.cixingtiaozhuan {
+    font-size: 18px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+}
+
+.cixingtiaozhuan_part {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a:link, a:visited {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(102, 101, 101);
+}
+
+.cixing_title {
+    font-size: 14px;
+    font-weight: 600;
+    display: table;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 4px;
+}
+
+.explanation {
+    font-size: 16px;
+    display: inline-block;
+    background-color: rgb(201, 201, 201);
+}
+
+.sentence_o::before {
+    font-size: 16px;
+    content: '●';
+}
+
+.sentence_o {
+    font-size: 14px;
+}
+
+.sentence_t {
+    padding-left: 12px;
+    font-size: 13px;
+    color: rgb(143, 143, 143);
+}
