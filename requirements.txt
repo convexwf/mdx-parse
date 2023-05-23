@@ -1,1 +1,2 @@
 python-lzo==1.15
+pyquery==1.4.3
