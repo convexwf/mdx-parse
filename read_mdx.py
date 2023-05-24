@@ -39,9 +39,11 @@ if thelittle_flag:
     thelittle_items     = [*MDX(thelittle_filename).items()]    # 释义html源码列表
 
 if biaoxianwenxing_flag:
-    biaoxianwenxing_filename  = "biaoxianwenxing.mdx"
+    biaoxianwenxing_filename  = "dict/日本語表現文型辞典_20190729/日本語表現文型辞典.mdx"
     biaoxianwenxing_headwords = [*MDX(biaoxianwenxing_filename)]            # 单词名列表
     biaoxianwenxing_items     = [*MDX(biaoxianwenxing_filename).items()]    # 释义html源码列表
+    with open('result/index.md', 'w+', encoding='utf-8') as fp:
+        fp.write('\n'.join([it.decode() for it in biaoxianwenxing_headwords]))
 
 def init():
     if collins_flag and len(collins_headwords) != len(collins_items):
@@ -157,6 +159,8 @@ def biaoxianwenxing_GetVocab(queryWord, query_res):
     if not ok:
         return query_res
     
+    query_res['queryWord'] = queryWord
+    
     # 从html中提取需要的部分。
     doc = pq(html)
     
@@ -172,35 +176,54 @@ def biaoxianwenxing_GetVocab(queryWord, query_res):
             return query_res
         doc = pq(html)
         
-    with open("y.html", 'w+', encoding='utf-8') as fp:
-        fp.write(doc.html())    
+    # with open("result/y.html", 'w+', encoding='utf-8') as fp:
+    #     fp.write(doc.html())    
     
-    wordBlock = list(doc('span[id="kobo.1.1"]').items())
-    if len(wordBlock) >= 1:
-        word = wordBlock[0].text().replace('\n', '').strip()
-        query_res['word'] = word
-        print(f'word: {word}')
+    query_res['word'] = []
+    wordBlock = list(doc('h1').items())
+    for word in wordBlock:
+        word = word.text().replace('\n', '').strip()
+        query_res['word'].append(word)
+        # print(f'word: {word}')
+        
+    if len(query_res['word']) > 1:
+        print(f"{queryWord} word size > 1. {query_res['word']}")
     
-    meaningBlock = list(doc('span[id="kobo.4.1"]').items())
-    if len(meaningBlock) >= 1:
-        chinese_meaning = meaningBlock[0].text().replace('\n', '').strip()
-        query_res['chinese_meaning'] = chinese_meaning
-        print(f'chinese_meaning: {chinese_meaning}')
+    query_res['chinese_meaning'] = []
+    meaningBlock = list(doc('p[class="meaning"]').items())
+    startIdx = 2 if len(meaningBlock) % 4 == 0 else 1
+    step = 4 if len(meaningBlock) % 4 == 0 else 3
+    for meaning in meaningBlock[startIdx::step]:
+        meaning = meaning.text().replace('\n', '').strip()
+        query_res['chinese_meaning'].append(meaning)
+        # print(f'chinese_meaning: {meaning}')
     
+    query_res['connect'] = []
     connectBlock = list(doc('div[class="connectionBlock"] > table > tr > td').items())
-    if len(connectBlock) >= 1:
-        connect = connectBlock[0].text().replace('\n', '').strip()
-        query_res['connect'] = connect
-        # print(f'connectBlock: {connect}')
+    for connect in connectBlock:
+        connect = connect.text().replace('\n', '').strip()
+        query_res['connect'].append(connect)
+        # print(f'connect: {connect}')
+    # if len(connectBlock) >= 1:
+    #     connect = connectBlock[0].text().replace('\n', '').strip()
+    #     query_res['connect'] = connect
+    #     # print(f'connectBlock: {connect}')
         
+    query_res['explanation'] = []
+    explanationBlock = list(doc('p[class="c-honbun"]').items())
+    for explanation in explanationBlock:
+        explanation = explanation.text().replace('\n', '').strip()
+        # 判断是否以数字为开头
+        if explanation[0].isdigit():
+            explanation = explanation[2:]
+        query_res['explanation'].append(explanation)
     explanationBlock = list(doc('p[class="c-honbun-1para"]').items())
-    if len(explanationBlock) >= 1:
-        explanation = explanationBlock[0].text().replace('\n', '').strip()
-        query_res['explanation'] = explanation
-        # print(f'explanation: {explanationBlock}')
-        
-    exampleBlock = doc('div[class="exampleBlock"] > dl > dd')
+    for explanation in explanationBlock:
+        explanation = explanation.text().replace('\n', '').strip()
+        query_res['explanation'].append(explanation)
+
     query_res['example'] = []
+    exampleBlock = doc('div[class="exampleBlock"] > dl > dd')
     for example in exampleBlock.items():
         rt_tags = example('rt')
         for rt_tag in rt_tags.items():
@@ -215,4 +238,5 @@ def biaoxianwenxing_GetVocab(queryWord, query_res):
 
 if __name__ == '__main__':
     # print(oxford_GetVocab(queryWord="aboveboard"))
-    print(biaoxianwenxing_GetVocab(queryWord="ようと（も）", query_res={}))
+    # print(biaoxianwenxing_GetVocab(queryWord="うえで", query_res={}))
+    print(biaoxianwenxing_GetVocab(queryWord="いかんで", query_res={}))
