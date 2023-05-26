@@ -220,8 +220,9 @@ def request_grammar(queryWord, query_res):
     
     queryUrl = ''
     for idx, line in enumerate(lines):
-        if queryWord in line:
-            query_res['queryWord'] = line.strip().split('\t')[0]
+        zaodao_word = line.strip().split('\t')[0]
+        if queryWord == zaodao_word:
+            query_res['queryWord'] = zaodao_word
             queryUrl = line.strip().split('\t')[1]
             break
     

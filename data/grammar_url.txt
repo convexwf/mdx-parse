@@ -152,7 +152,8 @@
 といえなくもない【と言えなくもない】	grammar.php?action=view&id=685&level=&level=1
 ものとおもわれる	grammar.php?action=view&id=686&level=&level=1
 こともあって	grammar.php?action=view&id=687&level=&level=1
-すべがない【術がない】	grammar.php?action=view&id=688&level=&level=1
+すべがない【術がない
+】	grammar.php?action=view&id=688&level=&level=1
 やれ～やれ	grammar.php?action=view&id=689&level=&level=1
 といって～ない/といったない	grammar.php?action=view&id=690&level=&level=1
 にいたっても【に至っても】	grammar.php?action=view&id=691&level=&level=1
@@ -411,12 +412,12 @@ v-られる覚えはない	grammar.php?action=view&id=1454&level=&level=1
 につれて/つれ【に連れて/連れ】	grammar.php?action=view&id=32&level=&level=2
 あまり【余り】	grammar.php?action=view&id=33&level=&level=2
 にとって（の/は/も）	grammar.php?action=view&id=34&level=&level=2
-にともなう/ともない/ともなって【に伴う/伴って/伴い】	grammar.php?action=view&id=36&level=&level=2
+にともなう/にともない/にともなって【に伴う/に伴って/に伴い】	grammar.php?action=view&id=36&level=&level=2
 あまりの∼に【余りの∼に】	grammar.php?action=view&id=38&level=&level=2
 にはんして/はんする/はんし/はんした【に反して/反する/反し/反した】	grammar.php?action=view&id=40&level=&level=2
 にほかならない/ほかならない	grammar.php?action=view&id=42&level=&level=2
 にもかかわらず	grammar.php?action=view&id=45&level=&level=2
-にもとづいて/もとづいた/もとづく/もとづいき【に基づいて/基づいた/基づく/基づき】	grammar.php?action=view&id=46&level=&level=2
+にもとづいて/にもとづいた/にもとづく/にもとづいき【に基づいて/に基づいた/に基づく/に基づき】	grammar.php?action=view&id=46&level=&level=2
 によって/により/による	grammar.php?action=view&id=50&level=&level=2
 いじょう（は）【以上（は）】	grammar.php?action=view&id=51&level=&level=2
 いっぽうで/いっぽうでは【一方で/一方では】	grammar.php?action=view&id=53&level=&level=2
@@ -689,9 +690,9 @@ v-られる覚えはない	grammar.php?action=view&id=1454&level=&level=1
 にくらべて/くらべ【 に比べて/比べ】	grammar.php?action=view&id=620&level=&level=2
 にくわえて/くわえ【に加えて/加え】	grammar.php?action=view&id=621&level=&level=2
 にこしたことはない/こしたことはない【に越したことはない/越したことはない】	grammar.php?action=view&id=622&level=&level=2
-にこたえて/こたえ/にこたえる【 に応えて/応え/ に応える】	grammar.php?action=view&id=623&level=&level=2
-にさいし/さいして【に際し/際して】	grammar.php?action=view&id=624&level=&level=2
-にさきだち/さきだって/にさきだつ【に先立ち/先立って/に先立つ】	grammar.php?action=view&id=625&level=&level=2
+にこたえて/にこたえ/にこたえる【 に応えて/応え/ に応える】	grammar.php?action=view&id=623&level=&level=2
+にさいし/にさいして【に際し/に際して】	grammar.php?action=view&id=624&level=&level=2
+にさきだち/にさきだって/にさきだつ【に先立ち/に先立って/に先立つ】	grammar.php?action=view&id=625&level=&level=2
 にしたがい/したがって【に従い/従って】	grammar.php?action=view&id=626&level=&level=2
 にしたところで/としたところで/にしたって/としたって	grammar.php?action=view&id=627&level=&level=2
 にしたら/しても/すれば	grammar.php?action=view&id=628&level=&level=2
@@ -708,7 +709,8 @@ v-られる覚えはない	grammar.php?action=view&id=1454&level=&level=1
 からでないと	grammar.php?action=view&id=655&level=&level=2
 いがいのなにものでもない【以外の何ものでもない】	grammar.php?action=view&id=664&level=&level=2
 としたことが	grammar.php?action=view&id=699&level=&level=2
-にいわせると/にいわせれば【に言わせると/に言わせればから言わせれば】	grammar.php?action=view&id=758&level=&level=2
+にいわせると/にいわせれば【に言わせると/に言わせれば
+から言わせれば】	grammar.php?action=view&id=758&level=&level=2
 からみて/からみても/からみると/からみれば【から見て/から見ても/から見ると/から見れば】	grammar.php?action=view&id=759&level=&level=2
 ことうけあいだ【こと請け合いだ】	grammar.php?action=view&id=760&level=&level=2
 ことこの上ない【こと此の上無い】	grammar.php?action=view&id=761&level=&level=2
@@ -716,7 +718,8 @@ v-られる覚えはない	grammar.php?action=view&id=1454&level=&level=1
 たってしようがない/てもしようがない	grammar.php?action=view&id=766&level=&level=2
 っ（て）たって	grammar.php?action=view&id=767&level=&level=2
 ても～ない	grammar.php?action=view&id=768&level=&level=2
-ないともかぎらない【ないとも限らない】	grammar.php?action=view&id=770&level=&level=2
+ないともかぎらない【ないとも限らない
+】	grammar.php?action=view&id=770&level=&level=2
 にかけても	grammar.php?action=view&id=771&level=&level=2
 によらず	grammar.php?action=view&id=772&level=&level=2
 のなんのって	grammar.php?action=view&id=776&level=&level=2
@@ -968,7 +971,8 @@ v-られる覚えはない	grammar.php?action=view&id=1454&level=&level=1
 てちょうだい【て頂戴】	grammar.php?action=view&id=954&level=&level=3
 てよかった	grammar.php?action=view&id=955&level=&level=3
 というのは～からだ/のだ	grammar.php?action=view&id=956&level=&level=3
-というほどではない/というほどでもない【ほどという】	grammar.php?action=view&id=957&level=&level=3
+というほどではない/というほどでもない【ほど
+という】	grammar.php?action=view&id=957&level=&level=3
 と（は）はんたいに【とは反対に】	grammar.php?action=view&id=958&level=&level=3
 ないかな	grammar.php?action=view&id=959&level=&level=3
 なおす【直す】	grammar.php?action=view&id=960&level=&level=3
@@ -1040,7 +1044,8 @@ v-られる覚えはない	grammar.php?action=view&id=1454&level=&level=1
 までで	grammar.php?action=view&id=1106&level=&level=4
 ~のだ/のだろう/のだろうか	grammar.php?action=view&id=1108&level=&level=4
 ~のだ/のだろう/のだろうか	grammar.php?action=view&id=1108&level=&level=4
-のではなくて【んじゃなくのじゃなく】	grammar.php?action=view&id=1109&level=&level=4
+のではなくて【んじゃなく
+のじゃなく】	grammar.php?action=view&id=1109&level=&level=4
 のは〜からだ/のは〜ためだ/のは〜のだ	grammar.php?action=view&id=1110&level=&level=4
 には	grammar.php?action=view&id=1111&level=&level=4
 だったら	grammar.php?action=view&id=1112&level=&level=4

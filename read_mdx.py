@@ -239,4 +239,4 @@ def biaoxianwenxing_GetVocab(queryWord, query_res):
 if __name__ == '__main__':
     # print(oxford_GetVocab(queryWord="aboveboard"))
     # print(biaoxianwenxing_GetVocab(queryWord="うえで", query_res={}))
-    print(biaoxianwenxing_GetVocab(queryWord="いかんで", query_res={}))
+    print(biaoxianwenxing_GetVocab(queryWord="にわたって", query_res={}))
