@@ -4,7 +4,7 @@
 # @FileName : base_reader.py
 # @Author : convexwf@gmail.com
 # @CreateDate : 2023-05-23 16:06
-# @UpdateTime : 2023-05-23 16:06
+# @UpdateTime : 2023-05-26 19:06
 
 from abc import ABC, abstractmethod
 import os
@@ -12,6 +12,7 @@ from readmdict import MDX
 
 
 class BaseMDXReader(ABC):
+
     mdx_file_path = ""
     is_initialized = False
     headwords = []
@@ -37,5 +38,16 @@ class BaseMDXReader(ABC):
             cls.__init_engine()
         if query_word.encode("utf-8") not in cls.headwords:
             return False, ""
-        index = cls.headwords.index(query_word.encode("utf-8"))
-        return True, cls.items[index][1].decode("utf-8")
+        index_list = cls._index_list(cls.headwords, query_word.encode("utf-8"))
+        return True, [
+            cls.items[index][1].decode("utf-8").strip() for index in index_list
+        ]
+
+    @classmethod
+    def _index_list(cls, value_list: list, value: str):
+        return [i for i, v in enumerate(value_list) if v == value]
+
+    @classmethod
+    @abstractmethod
+    def search(cls, query_word: str):
+        pass
